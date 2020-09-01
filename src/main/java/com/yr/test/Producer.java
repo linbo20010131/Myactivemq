@@ -52,7 +52,14 @@ public class Producer {
         String producerName = "ppjiang";
         Producer producer = new Producer();
         producer.producerStart(producerName);
-        producer.sendTextMessage();
+        //发送文本消息
+        //producer.sendTextMessage();
+        //发送序列化对象
+       // producer.sendObjectMessage();
+        //发送map
+       // producer.sendMap();
+        //发送byte
+        producer.sendByte();
     }
 
     /**
@@ -92,7 +99,73 @@ public class Producer {
             producer.send(textMessage);
         }
         session.commit();
+        System.out.println("文本消息发送成功");
+        //关闭客户端
+        closeAll(session,connection);
     }
+
+    /**
+     * 发送序列化对象
+     * @throws JMSException
+     */
+    public void sendObjectMessage() throws JMSException{
+        ObjectMessage objectMessage = session.createObjectMessage();
+        for (int i = 0; i <100 ; i++) {
+            objectMessage.setObject(new Student(i,"平萝莉"+i,"永州"+i));
+            producer.send(objectMessage);
+        }
+        session.commit();
+        System.out.println("对象发送成功");
+        closeAll(session,connection);
+    }
+
+
+    /**
+     * 发送map
+     * @throws JMSException
+     */
+    public void sendMap() throws  JMSException{
+        MapMessage mapMessage = session.createMapMessage();
+        mapMessage.setString("name","李杰");
+        mapMessage.setInt("id",1);
+        mapMessage.setString("addr","永州");
+        producer.send(mapMessage);
+        session.commit();
+        System.out.println("map发送完成");
+        closeAll(session,connection);
+    }
+
+    /**
+     * 发送byte类型
+     * @throws JMSException
+     */
+    public void sendByte() throws JMSException{
+        BytesMessage bytesMessage = session.createBytesMessage();
+        byte[] bytes = "钟保平".getBytes();
+        bytesMessage.writeBytes(bytes);
+        producer.send(bytesMessage);
+        session.commit();
+        System.out.println("byte类型发送成功!");
+        closeAll(session,connection);
+    }
+
+
+    /**
+     * 关闭连接
+     * @param session
+     * @param connection
+     * @throws JMSException
+     */
+    public static void closeAll(Session session,Connection connection) throws JMSException {
+        if(session != null){
+            session.close();
+        }
+        if(connection != null){
+            connection.close();
+        }
+    }
+
+
 
 
 }

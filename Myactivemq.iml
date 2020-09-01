@@ -1,2 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4" />
+
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/target/classes"/>
+    <output-test url="file://$MODULE_DIR$/target/test-classes"/>
+    <content>
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false"/>
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true"/>
+      <excludeFolder url="file://$MODULE_DIR$/target"/>
+    </content>
+    <orderEntry scope="TEST" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/maven/maven/repo/junit/junit/4.11/junit-4.11.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://E:/maven/maven/repo/junit/junit/4.11/junit-4.11-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry scope="TEST" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/maven/maven/repo/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://E:/maven/maven/repo/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/maven/maven/repo/org/apache/activemq/activemq-client/5.15.9/activemq-client-5.15.9.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/maven/maven/repo/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/maven/maven/repo/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/maven/maven/repo/org/fusesource/hawtbuf/hawtbuf/1.11/hawtbuf-1.11.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/maven/maven/repo/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/maven/maven/repo/org/msgpack/msgpack/0.6.12/msgpack-0.6.12.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/maven/maven/repo/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/maven/maven/repo/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/maven/maven/repo/org/ehcache/ehcache/3.5.2/ehcache-3.5.2.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+      </library>
+    </orderEntry>
+  </component>
+</module>

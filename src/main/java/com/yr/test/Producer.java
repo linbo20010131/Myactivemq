@@ -60,6 +60,8 @@ public class Producer {
        // producer.sendMap();
         //发送byte
         producer.sendByte();
+
+        System.out.println("pign");
     }
 
     /**
